@@ -7,138 +7,174 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
             <div class="logo">
                 <div class="logo-icon"></div>
                 <div class="logo-text">
+                    <h1>MyDearProperty</h1>
+                    <p>Convert Dreams into Reality</p>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Buy</a>
+            <a href="#">Rent</a>
+            <a href="#">Sell</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="header-right">
+            <button class="btn-prime">👑 Be Prime</button>
+            <button class="btn-post">Post Free Property</button>
+            <div class="auth-links">
+                <a href="#">Sign In</a>
+                <a href="#">Join Free</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Left Side - Login Form -->
+        <div class="login-section">
+            <div class="brand-small">
+                <div class="logo-icon-small"></div>
+                <div class="logo-text-small">
                     <h2>MyDearProperty</h2>
                     <p>Convert Dreams into Reality</p>
                 </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Rent</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <button class="btn-prime">👑 Be Prime</button>
-                <button class="btn-post">Post Free Property</button>
-                <div class="auth-links">
-                    <a href="#">Sign In</a>
-                    <a href="#">Join Free</a>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Left Side - Login Form -->
-        <div class="login-section">
-            <div class="login-card">
-                <div class="brand">
-                    <div class="brand-icon"></div>
-                    <div class="brand-text">
-                        <h3>MyDearProperty</h3>
-                        <p>Convert Dreams into Reality</p>
+            <h1 class="login-title">Login</h1>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
-                <h1 class="login-title">Login</h1>
+                <button type="submit" class="btn-login">Login</button>
 
-                <form class="login-form">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="example@gmail.com">
-                    </div>
+                <div class="form-footer">
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <a href="#" class="reset-link">Reset now</a>
+                </div>
 
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <div class="password-input">
-                            <input type="password" id="password" placeholder="********">
-                            <button type="button" class="toggle-password">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn-login">Login</button>
-
-                    <div class="form-footer">
-                        <span>Forgot password?</span>
-                        <a href="#" class="reset-link">Reset now</a>
-                    </div>
-
-                    <div class="register-link">
-                        Don't have an account? <a href="#">Register now</a>
-                    </div>
-                </form>
-            </div>
+                <div class="register-link">
+                    Don't have an account? <a href="#">Register now</a>
+                </div>
+            </form>
         </div>
 
-        <!-- Right Side - Animated Section -->
+        <!-- Right Side - Promotional Section -->
         <div class="promo-section">
-            <!-- Animated Background Elements -->
-            <div class="bg-elements">
-                <div class="cloud cloud1"></div>
-                <div class="cloud cloud2"></div>
-                <div class="cloud cloud3"></div>
-                <div class="leaf leaf1">🍃</div>
-                <div class="leaf leaf2">🍃</div>
-                <div class="leaf leaf3">🍃</div>
-                <div class="bamboo bamboo1">🎋</div>
-                <div class="bamboo bamboo2">🎋</div>
-            </div>
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
 
             <!-- Panda Character -->
             <div class="panda-container">
-                <div class="panda">
-                    <div class="panda-head">
-                        <div class="ear ear-left"></div>
-                        <div class="ear ear-right"></div>
-                        <div class="face">
-                            <div class="eye eye-left">
-                                <div class="pupil"></div>
-                            </div>
-                            <div class="eye eye-right">
-                                <div class="pupil"></div>
-                            </div>
-                            <div class="nose"></div>
-                            <div class="mouth"></div>
-                        </div>
-                    </div>
-                    <div class="panda-body">
-                        <div class="arm arm-left"></div>
-                        <div class="arm arm-right"></div>
-                        <div class="belly"></div>
-                        <div class="leg leg-left"></div>
-                        <div class="leg leg-right"></div>
-                    </div>
-                </div>
-                
-                <!-- Grass and Flowers -->
-                <div class="grass">
-                    <div class="flower flower1">🌸</div>
-                    <div class="flower flower2">🌺</div>
-                    <div class="flower flower3">🌼</div>
-                </div>
+                <svg class="panda" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left leg -->
+                    <ellipse cx="160" cy="420" rx="35" ry="45" fill="#2c2c2c"/>
+                    <ellipse cx="160" cy="450" rx="30" ry="25" fill="#f5f5f5"/>
+                    
+                    <!-- Right leg -->
+                    <ellipse cx="240" cy="420" rx="35" ry="45" fill="#2c2c2c"/>
+                    <ellipse cx="240" cy="450" rx="30" ry="25" fill="#f5f5f5"/>
+                    
+                    <!-- Body -->
+                    <ellipse cx="200" cy="320" rx="85" ry="110" fill="#f5f5f5"/>
+                    
+                    <!-- Left arm -->
+                    <g transform="translate(-10, 0)">
+                        <ellipse cx="130" cy="300" rx="30" ry="55" fill="#2c2c2c" transform="rotate(-25 130 300)"/>
+                        <ellipse cx="115" cy="340" rx="25" ry="30" fill="#2c2c2c"/>
+                        <ellipse cx="115" cy="355" rx="20" ry="18" fill="#f5f5f5"/>
+                    </g>
+                    
+                    <!-- Right arm -->
+                    <g transform="translate(10, 0)">
+                        <ellipse cx="270" cy="300" rx="30" ry="55" fill="#2c2c2c" transform="rotate(25 270 300)"/>
+                        <ellipse cx="285" cy="340" rx="25" ry="30" fill="#2c2c2c"/>
+                        <ellipse cx="285" cy="355" rx="20" ry="18" fill="#f5f5f5"/>
+                    </g>
+                    
+                    <!-- Head -->
+                    <circle cx="200" cy="180" r="75" fill="#f5f5f5"/>
+                    
+                    <!-- Left ear -->
+                    <circle cx="150" cy="130" r="35" fill="#2c2c2c"/>
+                    <circle cx="150" cy="135" r="20" fill="#1a1a1a"/>
+                    
+                    <!-- Right ear -->
+                    <circle cx="250" cy="130" r="35" fill="#2c2c2c"/>
+                    <circle cx="250" cy="135" r="20" fill="#1a1a1a"/>
+                    
+                    <!-- Left eye patch -->
+                    <ellipse cx="170" cy="170" rx="28" ry="35" fill="#2c2c2c" transform="rotate(-15 170 170)"/>
+                    
+                    <!-- Right eye patch -->
+                    <ellipse cx="230" cy="170" rx="28" ry="35" fill="#2c2c2c" transform="rotate(15 230 170)"/>
+                    
+                    <!-- Left eye white -->
+                    <ellipse cx="170" cy="172" rx="18" ry="22" fill="#fff"/>
+                    
+                    <!-- Right eye white -->
+                    <ellipse cx="230" cy="172" rx="18" ry="22" fill="#fff"/>
+                    
+                    <!-- Left pupil -->
+                    <circle cx="172" cy="175" r="10" fill="#1a1a1a"/>
+                    <circle cx="175" cy="172" r="4" fill="#fff"/>
+                    
+                    <!-- Right pupil -->
+                    <circle cx="228" cy="175" r="10" fill="#1a1a1a"/>
+                    <circle cx="231" cy="172" r="4" fill="#fff"/>
+                    
+                    <!-- Nose -->
+                    <ellipse cx="200" cy="200" rx="12" ry="10" fill="#2c2c2c"/>
+                    <ellipse cx="197" cy="198" rx="3" ry="3" fill="#fff" opacity="0.6"/>
+                    
+                    <!-- Mouth -->
+                    <path d="M 200 200 Q 195 210 188 208" fill="none" stroke="#2c2c2c" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M 200 200 Q 205 210 212 208" fill="none" stroke="#2c2c2c" stroke-width="3" stroke-linecap="round"/>
+                    
+                    <!-- Smile -->
+                    <path d="M 180 215 Q 200 225 220 215" fill="none" stroke="#2c2c2c" stroke-width="2.5" stroke-linecap="round"/>
+                    
+                    <!-- Cheek blush -->
+                    <ellipse cx="145" cy="195" rx="18" ry="12" fill="#ffb6c1" opacity="0.4"/>
+                    <ellipse cx="255" cy="195" rx="18" ry="12" fill="#ffb6c1" opacity="0.4"/>
+                </svg>
+
+                <!-- Flowers -->
+                <div class="flower flower1">🌸</div>
+                <div class="flower flower2">🌺</div>
+                <div class="flower flower3">🌼</div>
             </div>
 
-            <!-- Content -->
-            <div class="promo-content">
-                <h2>Sell or Rent your Property For Free</h2>
-                <h3>30 Lac+ Home Owners Trust Us</h3>
-                <p>I posted a property ad on MyDearProperty, an efficient real estate platform. Despite my busy schedule, they ensured timely communication, keeping me updated through emails and messages. They successfully found a tenant for my rental property that perfectly matched my requirements.</p>
-            </div>
+            <h2 class="promo-title">Sell or Rent your Property For Free</h2>
+            <p class="promo-subtitle">30 Lac+ Home Owners Trust Us</p>
+            <p class="promo-text">
+                I posted a property ad on MyDearProperty, an efficient real estate platform. Despite my busy schedule, they ensured timely communication, keeping me updated through emails and messages. They successfully found a tenant for my rental property that perfectly matched my requirements.
+            </p>
         </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
